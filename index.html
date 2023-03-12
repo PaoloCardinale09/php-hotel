@@ -13,28 +13,27 @@
     />
   </head>
   <body>
+    <h1 class="text-center pt-5">Seleziona le opzioni</h1>
+    <!-- 1 - Aggiungere un form ad inizio pagina che tramite una richiesta GET permetta di filtrare gli hotel che hanno un parcheggio. -->
     <div class="container">
-      <form
-        class="d-flex align-items-center py-5"
-        action="./hotels.php"
-        method="get"
-      >
-        <label class="h3 m-0" for="parking">Opzione parcheggio:</label>
-        <select id="parking" name="parking" class="me-5 ms-2">
+      <form action="./hotels.php" method="get" class="py-5 text-center">
+        <label for="parking" class="h2">Parcheggio</label>
+        <select id="parking" name="parking" class="form-select mb-5">
           <option value="all">Tutti gli hotel</option>
           <option value="1">Con parcheggio</option>
           <option value="0">Senza parcheggio</option>
         </select>
-        <label for="vote" class="h3">Voto:</label>
-        <select name="vote" id="vote" class="me-5 ms-2"">
+
+        <label for="vote" class="h2">Voto:</label>
+        <select name="vote" id="vote" class="form-select mb-5">
           <option value="all">Tutti gli hotel</option>
           <option value="3">3 stelle o più</option>
           <option value="4">4 stelle o più</option>
           <option value="5">5 stelle</option>
         </select>
 
-        <button type="button" class="btn btn-primary">Cerca</button>
-    </form>
+        <button class="btn btn-primary btn-lg">CERCA</button>
+      </form>
     </div>
   </body>
 </html>

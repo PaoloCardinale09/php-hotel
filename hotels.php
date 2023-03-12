@@ -56,25 +56,20 @@
 
 </head>
 <body>
-    <h1>
-    <?php echo $_GET["parking"]; ?>
-    
-    </h1>
+  
 
-    <div class="container">
-
-
-
-<table class="table">
-    <thead>
-        <tr class="table-primary text-center">
-            <th scope="col">Nome</th>
-            <th scope="col">Descrizione</th>
-            <th scope="col">Parcheggio</th>
-            <th scope="col">Voto</th>
-            <th scope="col">Distanza dal centro</th>  
-        </tr>
-    </thead>
+<div class="container py-5">
+    <h1 class="text-center mb-5">Elenco degli Hotels</h1>
+    <table class="table">
+        <thead>
+            <tr class="table-primary text-center">
+                <th scope="col">Nome</th>
+                <th scope="col">Descrizione</th>
+                <th scope="col">Parcheggio</th>
+                <th scope="col">Voto</th>
+                <th scope="col">Distanza dal centro</th>  
+            </tr>
+        </thead>
     <tbody>
         <?php foreach ($hotels as $hotel) :
             // Filtra gli hotel in base alla presenza o meno di parcheggio
